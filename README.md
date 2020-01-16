@@ -1,3 +1,1 @@
 # Computer-Graphics
-
-init
