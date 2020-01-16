@@ -5,8 +5,6 @@
 #include<graphics.h>
 #include<math.h>
 
-////////////////////
-
 struct point {
    float x;
    float y;
@@ -52,4 +50,5 @@ clrscr();
 
 getch();
 closegraph();
+
 }
