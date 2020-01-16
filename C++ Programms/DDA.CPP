@@ -12,41 +12,41 @@ struct point {
    float y;
 };
 
-float findSlope(point a, point b) {
-   float slope;
-   slope = (b.y - a.y)/(b.x - a.x);
-   return slope;
-}
-
 void main() {
 clrscr();
 
    int gd = DETECT,gm;
    initgraph(&gd,&gm,"C:\\TC\\BGI");
 
-   point beg, end, line;
+   point beg, end, Line;
+   float slope;
    int j, i;
 
    cout<<"Enter co-ordinates of initial point: ";
    cin>>beg.x>>beg.y;
    cout<<"Enter co-ordinates of last point: ";
    cin>>end.x>>end.y;
-   line = beg;
+   Line = beg;
 
    ////////////////////////////////////////////////
 
-   float m = fabs(findSlope(beg, end));
-   if(m <= 1) {
+   line(20, 25, 20, 454); //x-axis
+   line(15, 449, 619, 449); //y-axis
+
+   ////////////////////////////////////////////////
+
+   slope = fabs((end.y-beg.y)/(end.x-beg.x));
+   if(slope <= 1) {
      for(i=0; i<int(end.x-beg.x); i++) {
-	putpixel(line.x, 449-line.y, GREEN);
-	line.x += 1;
-	line.y += m;
+      putpixel(Line.x, 449-Line.y, GREEN);
+      Line.x += 1;
+      Line.y += slope;
      }
    } else {
      for(i=0; i<int(end.y-beg.y); i++) {
-	putpixel(line.x, 449-line.y, GREEN);
-	line.x += 1/m;
-	line.y += 1;
+      putpixel(Line.x, 449-Line.y, GREEN);
+      Line.x += 1/slope;
+      Line.y += 1;
      }
    }
 
