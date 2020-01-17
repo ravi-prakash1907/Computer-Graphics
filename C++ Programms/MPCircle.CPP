@@ -18,6 +18,8 @@ int main() {
     cout<<"Radius: ";
     cin>>r;
 
+    putpixel(319+h, 239-k, WHITE);  // center (h, k)
+
     x = 0;
     y = r;
 
