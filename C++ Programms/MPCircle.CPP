@@ -5,7 +5,17 @@
 
 int main() {
   clrscr();
-    int h, k, x, y, r, P, X, Y;
+    int h, k, r, P, X, Y;
+    int centerX = 319, centerY = 239;
+
+    cout<<"Enter co-ordinates of center(h, k): ";
+    cin>>h>>k;
+    cout<<"Radius: ";
+    cin>>r;
+
+    clrscr();
+
+    /////////////////////////////////////////
 
     int gd = DETECT,gm;
     initgraph(&gd, &gm, "C:\\TC\\BGI");
@@ -13,42 +23,42 @@ int main() {
     line(319, 15, 319, 464);	// y-axis
     line(15, 239, 624, 239);	// x-axis
 
-    cout<<"Enter co-ordinates of center(h, k): ";
-    cin>>h>>k;
-    cout<<"Radius: ";
-    cin>>r;
+    centerX += h;
+    centerY -= k;
 
-    putpixel(319+h, 239-k, WHITE);  // center (h, k)
+    putpixel(centerX, centerY, WHITE);  // center (h, k)
 
-    x = 0;
-    y = r;
+    X = 0;
+    Y = r;
 
     P = 1 - r;
 
-    for(; x<=y; x++) {
-       X = x+h;
-       Y = y+k;
+    while(X<=Y) {
 
        /*	REFLECTIONS	*/
-       //  (X`, Y`)    ..............    O  -> Oct.
-       putpixel(319+X, 239-Y, RED);     // O1
-       putpixel(319+X, 239+Y, RED);     // O4
-       putpixel(319-X, 239-Y, RED);     // O5
-       putpixel(319-X, 239+Y, RED);     // O8
+       //  (X`, Y`)    ............     O  -> Oct.
+       putpixel(centerX+X, centerY-Y, RED);     // O1
+       putpixel(centerX+X, centerY+Y, RED);     // O4
+       putpixel(centerX-X, centerY-Y, RED);     // O5
+       putpixel(centerX-X, centerY+Y, RED);     // O8
        //  (Y`, X`)
-       putpixel(319+Y, 239-X, GREEN);   // O2
-       putpixel(319+Y, 239+X, GREEN);   // O3
-       putpixel(319-Y, 239-X, GREEN);   // O6
-       putpixel(319-Y, 239+X, GREEN);   // O7
+       putpixel(centerX+Y, centerY-X, GREEN);   // O2
+       putpixel(centerX+Y, centerY+X, GREEN);   // O3
+       putpixel(centerX-Y, centerY-X, GREEN);   // O6
+       putpixel(centerX-Y, centerY+X, GREEN);   // O7
 
        if(P<0) {
-	 P += 2*x + 3;
+	 P += 2*X + 3;
        } else {
-	 P += 2*x - 2*y + 5;
-	 y--;
+	 P += 2*X - 2*Y + 5;
+	 Y--;
        }
+       X++;
     }
+
+    //////////////////////////////////////////////////
 
   getch();
   closegraph();
+  return 0;
 }
