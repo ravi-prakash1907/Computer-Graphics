@@ -1,6 +1,3 @@
-// 2-D Transformation for A tringle
-// Translation, Scaling, Reflection, Rototation & Shearing
-
 #include<iostream.h>
 #include<conio.h>
 #include<graphics.h>
@@ -34,11 +31,6 @@ void mapXY(int& x, int& y){
      y = 239 - y;
 }
 
-void demapXY(int& x, int& y){
-     x -= 319;
-     y += 239;
-}
-
 void drawAxis(int vertices[3][3]){
   int gd = DETECT , gm ;
 
@@ -49,7 +41,6 @@ void drawAxis(int vertices[3][3]){
     line(vertices[0][1]+319, 239-vertices[1][1], vertices[0][2]+319, 239-vertices[1][2]);
     line(vertices[0][2]+319, 239-vertices[1][2], vertices[0][0]+319, 239-vertices[1][0]);
 
-    // ---
     // Origin (319, 239)
     line(9, 239, 629, 239); //x-axis
     line(319, 9, 319, 469); //y-axis
@@ -115,9 +106,9 @@ void reflect(int obj[3][3], int about){
       }
 
    switch(about){
-      case 1: reflactmat[0][0] = -1;
+      case 1: reflactmat[1][1] = -1;
 	      break;
-      case 2: reflactmat[1][1] = -1;
+      case 2: reflactmat[0][0] = -1;
 	      break;
       case 3: reflactmat[0][0] = -1;
 	      reflactmat[1][1] = -1;
@@ -167,6 +158,8 @@ void rotate(int obj[3][3], double coff){
 }
 
 /////////////////////////////
+// Bug:  infinite shearing
+/////////////////////////////
 void shear(int obj[3][3], double dx, double dy){
 
    int final[3][3], i, j;
@@ -180,9 +173,6 @@ void shear(int obj[3][3], double dx, double dy){
    shrmat[0][1] = dx;
    shrmat[1][0] = dy;
    mul(final, shrmat, obj);
-
-   for(i=0; i<3; i++)
-     cout<<"("<<final[0][i]<<", "<<final[1][i]<<")\n";
 
    for(i=0; i<3; i++)
       mapXY(final[0][i], final[1][i]);
@@ -199,6 +189,8 @@ void main(){
     int vertices[3][3];
     int i, j, choice, about;
     double dx=0, dy=0, theeta;
+
+    beg:
     cout<<"\n Range of x-axis: [-320, 320]"
 	<<"\n Range of y-axis: [-240, 240]\n\n";
 
@@ -219,9 +211,10 @@ void main(){
 	  <<"--------\n"
 	  <<"\n 1) Translate"
 	  <<"\n 2) Scale"
-	  <<"\n 3) Reflect"
+	  <<"\n 3) Reflection"
 	  <<"\n 4) Rotate"
-	  <<"\n 5) Shear"
+	  <<"\n 5) Shear\n"
+	  <<"\n 6) Enter new vertices!!"
 	  <<"\n *  Press 0 to exit!\n\n   > ";
       cin>>choice;
       switch(choice){
@@ -284,6 +277,7 @@ void main(){
 		  getch();
 		  shear(vertices, dx, dy);
 		  break;
+	  case 6: goto beg;
 	  case 0: cout<<"Exiting...";
 		  delay(200);
 		  goto last;
