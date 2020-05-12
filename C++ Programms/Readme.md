@@ -23,35 +23,27 @@ Most of these algorithms are from the prescribed practical list of syllabus of B
 Following are some ```C++``` programs where the above listed programs are implemented: <br />
 
 1. **Name of algo:** Description....
-
 ![Output Screenshot](practicals/outputs/1.png)
 
 2. **Name of algo:** Description....
-
 ![Output Screenshot](practicals/outputs/1.png)
 
 3. **Name of algo:** Description....
-
 ![Output Screenshot](practicals/outputs/1.png)
 
 4. **Name of algo:** Description....
-
 ![Output Screenshot](practicals/outputs/1.png)
 
 5. **Name of algo:** Description....
-
 ![Output Screenshot](practicals/outputs/1.png)
 
 6. **Name of algo:** Description....
-
 ![Output Screenshot](practicals/outputs/1.png)
 
 7. **Name of algo:** Description....
-
 ![Output Screenshot](practicals/outputs/1.png)
 
 8. **Name of algo:** Description....
-
 ![Output Screenshot](practicals/outputs/1.png)
 
 Apart from these, Digital Differential Analyzer(DDA) is also implemented that is one of the earlier algorithms, used for line drawing.
