@@ -1,4 +1,4 @@
-//  bresenham's line algorithm
+//  bresenham's line drawing algorithm
 
 #include<iostream.h>
 #include<conio.h>
