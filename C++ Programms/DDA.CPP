@@ -1,4 +1,4 @@
-//DDA
+//Digital Differential Analyzer
 
 #include<iostream.h>
 #include<conio.h>
