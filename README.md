@@ -19,6 +19,6 @@ I've included the following types of algorithms' implementation herein this repo
 I've designed the separate programs to implement these algorithms in ```C++``` language, which is well known for **OOPs**.<br />
 To explore these algorithms even further, please visit [_C++ Programms_](C%2B%2B%20Programms).
 
-<br /><hr />
+<br /> <hr />
 
 This is also repo. to hold the practicals of the same subject, as per the prescription of the syllabus of _B.Sc. (Hons.) Computer Science_, **University of Delhi**.<br />
