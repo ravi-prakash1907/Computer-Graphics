@@ -22,28 +22,49 @@ Most of these algorithms are from the prescribed practical list of syllabus of B
 
 Following are some ```C++``` programs where the above listed programs are implemented: <br />
 
-1. **Name of algo:** Description.... <br />
+1. **Bresenham’s Line Lrawing Algorithm:** Description.... <br />
 ![Output Screenshot](practicals/outputs/1.png)
 
-2. **Name of algo:** Description.... <br />
-![Output Screenshot](practicals/outputs/1.png)
+2. **Mid-Point Circle Drawing Algorithm:** Description.... <br />
+![Output Screenshot](practicals/outputs/2.png)
 
-3. **Name of algo:** Description.... <br />
-![Output Screenshot](practicals/outputs/1.png)
+3. **Cohen and Sutherland Line Clipping Algorithm:** Description.... <br />
+![Output Screenshot](practicals/outputs/3.png)
 
-4. **Name of algo:** Description.... <br />
-![Output Screenshot](practicals/outputs/1.png)
+4. **Sutherland Hodgeman Polygon Clipping Algorithm:** Description.... <br />
+![Output Screenshot](practicals/outputs/4.png)
 
-5. **Name of algo:** Description.... <br />
-![Output Screenshot](practicals/outputs/1.png)
+5. **Scan Line Fill Algorithm for Polygon:**<br />
+    **Diring the execution of algo.**<br />
+![Output Screenshot](practicals/outputs/5_1.png)
+    **After complete fill**<br />
+![Output Screenshot](practicals/outputs/5_2.png)
 
-6. **Name of algo:** Description.... <br />
-![Output Screenshot](practicals/outputs/1.png)
+6. **2-D Transformations:** Description.... <br />
+    **Input co-ordinates**<br />
+![Output Screenshot](practicals/outputs/6_0.png)
+    **Reflection**<br />
+![Output Screenshot](practicals/outputs/6_1.png)
+    <br />
+![Output Screenshot](practicals/outputs/6_2.png)
+    **Rotation**<br />
+![Output Screenshot](practicals/outputs/6_3.png)
+    <br />
+![Output Screenshot](practicals/outputs/6_4.png)
 
-7. **Name of algo:** Description.... <br />
-![Output Screenshot](practicals/outputs/1.png)
+7. **3-D Transformations:** Description.... <br />
+    **3-D Figure**<br />
+![Output Screenshot](practicals/outputs/7_0.png)
+    **Scaling**<br />
+![Output Screenshot](practicals/outputs/7_1.png)
+    <br />
+![Output Screenshot](practicals/outputs/7_2.png)
+    **Perspective Projection**<br />
+![Output Screenshot](practicals/outputs/7_3.png)
+    <br />
+![Output Screenshot](practicals/outputs/7_4.png)
 
-8. **Name of algo:** Description.... <br />
-![Output Screenshot](practicals/outputs/1.png)
+8. **Hermite / Bezier Curve:** Description.... <br />
+![Output Screenshot](practicals/outputs/8.png)
 
 Apart from these, Digital Differential Analyzer(DDA) is also implemented that is one of the earlier algorithms, used for line drawing.
