@@ -52,7 +52,7 @@ Following are some ```C++``` programs where the above listed programs are implem
     <br />
 ![Output Screenshot](practicals/outputs/6_4.png)
 
-7. **3-D Transformations:** Description.... <br />
+7. **3-D Transformations:**<br />
     **3-D Figure**<br />
 ![Output Screenshot](practicals/outputs/7_0.png)
     **Scaling**<br />
@@ -64,7 +64,7 @@ Following are some ```C++``` programs where the above listed programs are implem
     <br />
 ![Output Screenshot](practicals/outputs/7_4.png)
 
-8. **Hermite / Bezier Curve:** Description.... <br />
+8. **Hermite / Bezier Curve:**<br />
 ![Output Screenshot](practicals/outputs/8.png)
 
 Apart from these, Digital Differential Analyzer(DDA) is also implemented that is one of the earlier algorithms, used for line drawing.
