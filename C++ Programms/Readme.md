@@ -22,16 +22,16 @@ Most of these algorithms are from the prescribed practical list of syllabus of B
 
 Following are some ```C++``` programs where the above listed programs are implemented: <br />
 
-1. **Bresenham’s Line Lrawing Algorithm:** Description.... <br />
+1. **Bresenham’s Line Lrawing Algorithm:**<br />
 ![Output Screenshot](practicals/outputs/1.png)
 
-2. **Mid-Point Circle Drawing Algorithm:** Description.... <br />
+2. **Mid-Point Circle Drawing Algorithm:**<br />
 ![Output Screenshot](practicals/outputs/2.png)
 
-3. **Cohen and Sutherland Line Clipping Algorithm:** Description.... <br />
+3. **Cohen and Sutherland Line Clipping Algorithm:**<br />
 ![Output Screenshot](practicals/outputs/3.png)
 
-4. **Sutherland Hodgeman Polygon Clipping Algorithm:** Description.... <br />
+4. **Sutherland Hodgeman Polygon Clipping Algorithm:**<br />
 ![Output Screenshot](practicals/outputs/4.png)
 
 5. **Scan Line Fill Algorithm for Polygon:**<br />
@@ -40,7 +40,7 @@ Following are some ```C++``` programs where the above listed programs are implem
     **After complete fill**<br />
 ![Output Screenshot](practicals/outputs/5_2.png)
 
-6. **2-D Transformations:** Description.... <br />
+6. **2-D Transformations:**<br />
     **Input co-ordinates**<br />
 ![Output Screenshot](practicals/outputs/6_0.png)
     **Reflection**<br />
