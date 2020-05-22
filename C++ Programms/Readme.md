@@ -13,6 +13,7 @@ These algorithms are are related to the folowing concepts:<br />
 >   * Shearing
 >   * Reflecting
 >   * Rotating
+>   * Projection etc..
 
 Most of these algorithms are from the prescribed practical list of syllabus of B.Sc. (H) Computer Science. Hence, those are placed separatly into [practicals](https://github.com/ravi-prakash1907/Computer-Graphics/tree/master/C%2B%2B%20Programms/practicals) directory. <br />
 
