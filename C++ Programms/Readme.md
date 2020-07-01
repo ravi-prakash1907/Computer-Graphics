@@ -67,4 +67,7 @@ Following are some ```C++``` programs where the above listed programs are implem
 8. **Hermite / Bezier Curve:**<br />
 ![Output Screenshot](practicals/outputs/8.png)
 
-Apart from these, Digital Differential Analyzer(DDA) is also implemented that is one of the earlier algorithms, used for line drawing.
+Apart from these, Digital Differential Analyzer(DDA) is also implemented that is one of the earlier algorithms, used for line drawing. <br /><br />
+
+The output of **DDA** is:<br />
+![Output Screenshot](practicals/outputs/1.png)
